@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>code editor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,25 +11,24 @@
         <!-- html section -->
         <section id="html" class="editor">
             <h4>HTML</h4>
-            <textarea name="txt" id="txt"></textarea>
+            <textarea name="txt" id="htmlcode" onkeyup="run()"></textarea>
         </section>
         <!-- css section -->
         <section id="css" class="editor">
             <h4>CSS</h4>
-            <textarea name="txt" id="txt"></textarea>
+            <textarea name="txt" id="csscode" onkeyup="run()"></textarea>
         </section>
         <!-- js section -->
         <section id="js" class="editor">
             <h4>Javascript</h4>
-            <textarea name="txt" id="txt"></textarea>
+            <textarea name="txt" id="jscode" onkeyup="run()"></textarea>
         </section>
     </div>
     <!-- output section  -->
      <div id="output-box">
         <h1>output</h1>
-        <iframe id="output"></iframe>
+        <iframe id="show"></iframe>
      </div>
-   
     <script src="logic.js"></script>
 </body>
 </html>
